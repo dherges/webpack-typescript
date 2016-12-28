@@ -1,0 +1,19 @@
+// ~ syntax resolves relative to node_modules dependencies, see https://github.com/jtangelder/sass-loader#imports
+@import "~bootstrap/scss/bootstrap-grid";
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/card";
+
+/* slim alternatives to bootstrap:
+ * - http://getskeleton.com/
+ * - http://purecss.io/
+ * - https://imperavi.com/kube/
+ * - http://bulma.io/ (Microsoft metro-inspired)
+ * - http://materializecss.com/ (Twitter's bootstrap in Google's material design ... alles nur geklaut)
+ */
+
+html, body {
+  font-family: Arial;
+  font-size: 16px;
+}

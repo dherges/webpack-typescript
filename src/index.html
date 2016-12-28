@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My First TypeScript Application</title>
+  <meta name="description" content="My First TypeScript Application">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>it works!</h1>
+
+    <!-- DOM mountpoint for app/timer.ts -->
+    <div name="moment"></div>
+
+  </div>
+
+  <!-- RxJS demo -->
+  <div class="container">
+    <form>
+      <div class="row form-group">
+        <div class="col-sm-12">
+          <label for="queryInput">Was suchst Du?</label>
+          <input type="text" id="queryInput" class="form-control">
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="h5">Ergebnisse <small>(<span id="queryResultsCount"></span>)</small></h2>
+        <div id="queryResults" class="mt-1 card-columns"></div>
+      </div>
+    </div>
+  </div>
+  <!-- RxJS demo end -->
+
+
+  <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+
+</body>
+</html>
