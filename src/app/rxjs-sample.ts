@@ -5,7 +5,7 @@ const textInput = document.getElementById('queryInput');
 Observable.merge(
   Observable.fromEvent(textInput, 'keyup'),
   Observable.fromEvent(document, 'DOMContentLoaded')
-).map((evt) => evt['target']['value'] ? '' + evt.target.value : '')
+).map((evt) => evt['target']['value'] ? '' + evt['target'].value : '')
   .debounceTime(200) // <-- Temporaler Operator ... teuflische Sache :)
   .distinctUntilChanged()
   .switchMap((query) => Observable.of(filterAndSort(ITEMS, query)).delay(300))  // Observable<[]>

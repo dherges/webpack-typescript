@@ -30,6 +30,14 @@ module.exports = function(config) {
     ],
 
     /*
+     * serve *.ts files with correct mime type
+     * see: https://github.com/angular/angular-cli/issues/2125#issuecomment-247395088
+     */
+    mime: {
+      'text/x-typescript': ['ts','tsx']
+    },
+
+    /*
      * preprocess matching files before serving them to the browser
      * available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
      */
